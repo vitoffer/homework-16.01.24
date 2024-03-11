@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <form action="login" method="post">
+        <label>ФИО: <input type="text" name="fio" placeholder="фамилия и имя"></label>
+        <div class="class">
+            <span>Класс: </span>
+            <ul>
+                <li><label><input type="radio" name="klass" value="10Т">10Т</label></li>
+                <li><label><input type="radio" name="klass" value="10И">10И</label></li>
+            </ul>
+        </div>
+        <input type="submit" value="Войти">
+    </form>
+</body>
+
+</html>

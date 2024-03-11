@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+</head>
+
+<body>
+    <h1 align="center">Тест по 7 заданию</h1>
+    <form action="answer" method="post">
+        <div class="num">
+            <div class="a">
+                <span>1</span>
+                <img src="{{ url_for('static', filename='images/1.png') }}" alt="">
+            </div>
+            <input type="number" name="num1" placeholder="ответ">
+        </div>
+
+        <div class="num">
+            <div class="a">
+                <span>2</span>
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="">
+            </div>
+            <input type="number" name="num2" placeholder="ответ">
+        </div>
+
+        <div class="num">
+            <div class="a">
+                <span>3</span>
+                <img src="{{ url_for('static', filename='images/3.png') }}" alt="">
+            </div>
+            <input type="number" name="num3" placeholder="ответ">
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>

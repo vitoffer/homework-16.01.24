@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    background-color: #c5c5c5;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin-left: 50px;
+}
+
+.num {
+    margin-top: 50px;
+}
+
+.a {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+input[type='number'] {
+    padding: 5px;
+    margin: 30px 0 0 70px;
+    outline: none;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    margin: 30px 0 0 70px;
+}
